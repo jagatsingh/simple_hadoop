@@ -1,12 +1,7 @@
-Download the required box in this folder from net
+Download the required binaries in this folder from net
 
-http://files.vagrantup.com/precise32.box
+http://mirror.rackcentral.com.au/apache/hadoop/common/stable2/
 
 Example
 
-G:\dev\workspace\simple_hadoop\boxes\precise32.box
-
-Add it your vagrant using command
-
-cd /path_to_simple_hadoop
-vagrant add box precise32 simple_hadoop/boxes/precise32.box
+/simple_hadoop/binaries/hadoop/hadoop-2.2.0.tar.gz
