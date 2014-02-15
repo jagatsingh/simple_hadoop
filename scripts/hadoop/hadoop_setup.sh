@@ -16,6 +16,7 @@ export_env_variable HADOOP_MAPRED_HOME=${MY_HOME}/${PROJECT}/hadoop-2.2.0
 export_env_variable HADOOP_COMMON_HOME=${MY_HOME}/${PROJECT}/hadoop-2.2.0
 export_env_variable HADOOP_HDFS_HOME=${MY_HOME}/${PROJECT}/hadoop-2.2.0
 export_env_variable YARN_HOME=${MY_HOME}/${PROJECT}/hadoop-2.2.0
+export_env_variable HADOOP_CONF_DIR=${MY_HOME}/${PROJECT}/hadoop-2.2.0/etc/hadoop
 
 echo "PATH=$PATH:${MY_HOME}/${PROJECT}/jdk1.7.0_51/bin:${MY_HOME}/${PROJECT}/hadoop-2.2.0/bin:${MY_HOME}/${PROJECT}/hadoop-2.2.0/sbin" >> ${MY_HOME}/.bashrc
 sudo chown -R vagrant:vagrant ${MY_HOME}/
