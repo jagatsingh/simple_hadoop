@@ -12,3 +12,6 @@ export_env_variable SPARK_HOME=${MY_HOME}/${PROJECT}/spark-0.9.0-incubating-bin-
 #echo "PATH=$PATH:${MY_HOME}/${PROJECT}/spark-0.9.0-incubating-bin-hadoop2/bin" >> ${MY_HOME}/.bashrc
 
 
+mv ${MY_HOME}/${PROJECT}/spark-0.9.0-incubating-bin-hadoop2/conf/spark-env.sh.template ${MY_HOME}/${PROJECT}/spark-0.9.0-incubating-bin-hadoop2/conf/spark-env.sh
+
+
