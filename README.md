@@ -35,8 +35,8 @@ http://blog.cloudera.com/blog/2013/04/how-to-use-vagrant-to-set-up-a-virtual-had
 
 # Supported tools
 
-* Hadoop
-* Spark
+* Hadoop pseudo mode
+* Spark Standalone
 * Scala
 * Java
 
