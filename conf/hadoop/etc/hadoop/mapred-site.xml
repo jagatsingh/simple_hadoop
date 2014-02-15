@@ -1,0 +1,16 @@
+<configuration>
+<property>
+<name>mapreduce.framework.name</name>
+<value>yarn</value>
+</property>
+<property>
+    <name>mapred.system.dir</name>
+    <value>file:/home/vagrant/simple_hadoop/data/hadoop-2.2.0/mapred/system</value>
+    <final>true</final>
+  </property>
+  <property>
+    <name>mapred.local.dir</name>
+    <value>file:/home/vagrant/simple_hadoop/data/hadoop-2.2.0/mapred/local</value>
+    <final>true</final>
+  </property>
+</configuration> 

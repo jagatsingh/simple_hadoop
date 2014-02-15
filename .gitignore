@@ -4,3 +4,16 @@
 *.jar
 *.war
 *.ear
+
+# Boxes and ISO
+
+*.box
+*.iso
+
+# Tar balls
+
+*.tar.gz
+*.tar
+*.gz
+*.tgz
+

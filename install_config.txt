@@ -1,0 +1,2 @@
+MY_HOME=/home/vagrant
+PROJECT=simple_hadoop
