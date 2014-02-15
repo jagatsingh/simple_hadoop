@@ -33,13 +33,22 @@ Credits: A blog post on Cloudera website which first introduced me to Vagrant.
 
 http://blog.cloudera.com/blog/2013/04/how-to-use-vagrant-to-set-up-a-virtual-hadoop-cluster/
 
+# Supported tools
 
+* Hadoop
+* Spark
+* Scala
+* Java
 
 # How it works 
 
 Basically it just do all what is mentioned here in blog post automatically for you
 
+Hadoop
 http://jugnu-life.blogspot.com/2012/05/hadoop-20-install-tutorial-023x.html
+
+Spark
+http://jugnu-life.blogspot.com/2013/08/spark-standalone-mode-installation-steps.html
 
 You can read there on what's happening , so that you have solid understanding on what is required to make Hadoop up and running.
 
