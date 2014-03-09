@@ -11,7 +11,7 @@ cd ${MY_HOME}/${PROJECT}
 
 # Execute specific personal override settings
 
-/vagrant/scripts/personal_env_setup.sh
+#/vagrant/scripts/personal_env_setup.sh
 
 # Setup SSH
 /vagrant/scripts/ssh/ssh_setup.sh
