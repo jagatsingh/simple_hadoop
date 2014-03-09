@@ -1,0 +1,2 @@
+Acquire::http{Proxy "http://1204master64bit:3142";};
+Acquire::ftp{Proxy "ftp://1204master64bit:3142";};

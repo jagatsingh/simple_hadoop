@@ -7,32 +7,32 @@ cd ${MY_HOME}/${PROJECT}
 
 # Extract binaries
 
-sudo tar -xzvf /vagrant/binaries/hadoop/hadoop* 
+sudo tar -xzvf /vagrant/binaries/hadoop/${SH_HADOOP_VERSION}.tar.gz
 
 # Environment variables
 
-export_env_variable HADOOP_PREFIX=${MY_HOME}/${PROJECT}/hadoop-2.2.0
-export_env_variable HADOOP_MAPRED_HOME=${MY_HOME}/${PROJECT}/hadoop-2.2.0
-export_env_variable HADOOP_COMMON_HOME=${MY_HOME}/${PROJECT}/hadoop-2.2.0
-export_env_variable HADOOP_HDFS_HOME=${MY_HOME}/${PROJECT}/hadoop-2.2.0
-export_env_variable YARN_HOME=${MY_HOME}/${PROJECT}/hadoop-2.2.0
-export_env_variable HADOOP_CONF_DIR=${MY_HOME}/${PROJECT}/hadoop-2.2.0/etc/hadoop
+export_env_variable HADOOP_PREFIX=${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}
+export_env_variable HADOOP_MAPRED_HOME=${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}
+export_env_variable HADOOP_COMMON_HOME=${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}
+export_env_variable HADOOP_HDFS_HOME=${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}
+export_env_variable YARN_HOME=${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}
+export_env_variable HADOOP_CONF_DIR=${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/etc/hadoop
 
-echo "PATH=$PATH:${MY_HOME}/${PROJECT}/jdk1.7.0_51/bin:${MY_HOME}/${PROJECT}/hadoop-2.2.0/bin:${MY_HOME}/${PROJECT}/hadoop-2.2.0/sbin" >> ${MY_HOME}/.bashrc
+echo "PATH=$PATH:${MY_HOME}/${PROJECT}/jdk1.7.0_51/bin:${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/bin:${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/sbin" >> ${MY_HOME}/.bashrc
 sudo chown -R vagrant:vagrant ${MY_HOME}/
 # Append the Java home to hadoop environment file
-echo "export JAVA_HOME="${MY_HOME}/${PROJECT}/jdk1.7.0_51"" >> ${MY_HOME}/${PROJECT}/hadoop-2.2.0/etc/hadoop/hadoop-env.sh
+echo "export JAVA_HOME="${MY_HOME}/${PROJECT}/jdk1.7.0_51"" >> ${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/etc/hadoop/hadoop-env.sh
 
 # Create Hadoop data directories
 
-sudo mkdir -p ${MY_HOME}/${PROJECT}/data/hadoop-2.2.0/dfs/name
-sudo mkdir -p ${MY_HOME}/${PROJECT}/data/hadoop-2.2.0/dfs/data
-sudo mkdir -p ${MY_HOME}/${PROJECT}/data/hadoop-2.2.0/mapred/system
-sudo mkdir -p ${MY_HOME}/${PROJECT}/data/hadoop-2.2.0/mapred/local
-sudo chown -R vagrant:vagrant ${MY_HOME}/
+sudo mkdir -p ${MY_HOME}/${PROJECT}/data/hadoop/dfs/name
+sudo mkdir -p ${MY_HOME}/${PROJECT}/data/hadoop/dfs/data
+sudo mkdir -p ${MY_HOME}/${PROJECT}/data/hadoop/mapred/system
+sudo mkdir -p ${MY_HOME}/${PROJECT}/data/hadoop/mapred/local
+
 
 # Copy the configuration files
-cp -f /vagrant/conf/hadoop/etc/hadoop/* ${MY_HOME}/${PROJECT}/hadoop-2.2.0/etc/hadoop
+cp -f /vagrant/conf/hadoop/etc/hadoop/* ${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/etc/hadoop
 
 
 # Login to VM with username password

@@ -1,2 +1,18 @@
 MY_HOME=/home/vagrant
 PROJECT=simple_hadoop
+
+
+# Specify Simple Hadoop (SH) Software versions here and copy the same versions in binaries folder
+
+SH_HADOOP_VERSION=hadoop-2.3.0
+SH_SPARK_VERSION=spark-0.9.0-incubating-bin-hadoop2
+SH_SOLR_VERSION=solr-4.7.0
+SH_LILY_VERSION=lily-2.4
+SH_HUE_VERSION=hue-3.5.0
+
+# Languages
+
+SH_SCALA_VERSION=scala-2.10.3
+SH_JAVA_VERSION=hadoop-2.3.0
+
+# Machine learning libraries

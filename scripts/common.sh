@@ -9,3 +9,8 @@ export_env_variable()
 
 }
 
+# Just update the apt repo
+# apt-get update
+
+# Give password less sudo to vagrant user
+echo "vagrant ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
