@@ -1,8 +1,8 @@
-# About Simple Hadoop
+## About Simple Hadoop
 
 This project makes you to play with Hadoop and Bigdata tools right away. No need to install your self will make process easy to start.
 
-# Supported tools and libraries
+### Supported tools and libraries
 
 BigData ecosystem tools
 
@@ -27,7 +27,7 @@ Machine Learning and Datascience
 * H2O
 * scikit-learn
 
-## Why not use other VMs , Packages already available
+### Why not use other VMs , Packages already available
 
 I have tried to keep it align with Apache Binaries. You might ask why ?
 
@@ -42,7 +42,7 @@ Just replace that in Binaries folder and you can build a new machine.
 
 All in one place
 
-## How to use it
+### How to use it
 
 Just install on your system
 
