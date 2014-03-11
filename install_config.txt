@@ -9,6 +9,7 @@ SH_SPARK_VERSION=spark-0.9.0-incubating-bin-hadoop2
 SH_SOLR_VERSION=solr-4.7.0
 SH_LILY_VERSION=lily-2.4
 SH_HUE_VERSION=hue-3.5.0
+SH_ZOOKEEPER_VERSION=zookeeper-3.4.5
 
 # Languages
 
