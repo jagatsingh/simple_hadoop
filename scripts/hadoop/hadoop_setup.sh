@@ -18,10 +18,10 @@ export_env_variable HADOOP_HDFS_HOME=${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}
 export_env_variable YARN_HOME=${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}
 export_env_variable HADOOP_CONF_DIR=${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/etc/hadoop
 
-echo "PATH=$PATH:${MY_HOME}/${PROJECT}/jdk1.7.0_51/bin:${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/bin:${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/sbin" >> ${MY_HOME}/.bashrc
+echo "PATH=$PATH:${MY_HOME}/${PROJECT}/${SH_JAVA_VERSION}/bin:${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/bin:${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/sbin" >> ${MY_HOME}/.bashrc
 sudo chown -R vagrant:vagrant ${MY_HOME}/
 # Append the Java home to hadoop environment file
-echo "export JAVA_HOME="${MY_HOME}/${PROJECT}/jdk1.7.0_51"" >> ${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/etc/hadoop/hadoop-env.sh
+echo "export JAVA_HOME="${MY_HOME}/${PROJECT}/${SH_JAVA_VERSION}"" >> ${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/etc/hadoop/hadoop-env.sh
 
 # Create Hadoop data directories
 
@@ -43,6 +43,9 @@ cp -f /vagrant/conf/hadoop/etc/hadoop/* ${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSIO
 # Commands to Start Hadoop
 #hdfs namenode -format
 #start-all.sh
+
+#or 
+#start-dfs.sh
 #start-yarn.sh
 
 # Check , just run jps command to see all hadoop services are up

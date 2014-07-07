@@ -51,9 +51,9 @@ Just install on your system
 * Clone this repo
 * Download the binaries and Virtual Image Box from net
 
-Open the setup.sh file from scripts directory.
+To do this , change the apache mirror to nearest one to you. Open install_config.txt
 
-Comment out the tools which you want to try out.
+Open the setup.sh file from scripts directory. Comment out the tools which you want to try out.
 
 After this just do 
 
