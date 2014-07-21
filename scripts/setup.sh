@@ -1,6 +1,7 @@
+#!/bin/sh
 # Create data folders
-source /vagrant/scripts/common.sh
-source /vagrant/install_config.txt
+. /vagrant/scripts/common.sh
+. /vagrant/install_config.txt
 
 sudo mkdir ${MY_HOME}/${PROJECT}
 cd ${MY_HOME}/${PROJECT}

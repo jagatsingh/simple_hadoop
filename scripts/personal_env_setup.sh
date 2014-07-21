@@ -1,3 +1,4 @@
+#!/bin/sh
 # This file contains settings which are overridden as per my home setup.
 # You don't need this file. But i am documenting how I am using this
 

@@ -1,5 +1,5 @@
-source /vagrant/scripts/common.sh
-source /vagrant/install_config.txt
+. /vagrant/scripts/common.sh
+. /vagrant/install_config.txt
 
 # Setup ssh keys for vagrant user
 ssh-keygen -t dsa -P '' -f ${MY_HOME}/.ssh/id_dsa

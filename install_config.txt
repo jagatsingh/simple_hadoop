@@ -1,12 +1,13 @@
 MY_HOME=/home/vagrant
 PROJECT=simple_hadoop
+PLATFORM_VERSION=32
 
 APACHE_MIRROR=http://apache.mirror.uber.com.au
 
 
 # Specify Simple Hadoop (SH) Software versions here and copy the same versions in binaries folder
 
-SH_JAVA_VERSION=jdk1.7.0_60
+SH_JAVA_VERSION=jdk1.7.0_65
 
 SH_HADOOP_VERSION=hadoop-2.4.1
 SH_SPARK_VERSION=spark-0.9.0-incubating-bin-hadoop2

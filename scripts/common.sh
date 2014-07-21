@@ -1,3 +1,4 @@
+#!/bin/sh
 
 
 # General function to export environment variables to .bashrc

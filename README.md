@@ -193,3 +193,7 @@ Make it holistic by adding various Machine learning libraries and other tools
 
 Make Packer images setup
 
+# Known Issues
+
+The Hadoop tar present on Apache website has been build for 32bit systems so i am using 32bit images. You can
+rebuild tar for 64 bit system and use 32 bit Vagrant image and Jdk

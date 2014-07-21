@@ -1,6 +1,7 @@
+#!/bin/sh
 # Source common stuff
-source /vagrant/scripts/common.sh
-source /vagrant/install_config.txt
+. /vagrant/scripts/common.sh
+. /vagrant/install_config.txt
 
 
 cd ${MY_HOME}/${PROJECT}
@@ -17,6 +18,9 @@ export_env_variable HADOOP_COMMON_HOME=${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION
 export_env_variable HADOOP_HDFS_HOME=${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}
 export_env_variable YARN_HOME=${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}
 export_env_variable HADOOP_CONF_DIR=${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/etc/hadoop
+
+export_env_variable YARN_EXAMPLES=${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/share/hadoop/mapreduce
+
 
 echo "PATH=$PATH:${MY_HOME}/${PROJECT}/${SH_JAVA_VERSION}/bin:${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/bin:${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/sbin" >> ${MY_HOME}/.bashrc
 sudo chown -R vagrant:vagrant ${MY_HOME}/
@@ -51,3 +55,6 @@ cp -f /vagrant/conf/hadoop/etc/hadoop/* ${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSIO
 # Check , just run jps command to see all hadoop services are up
 # Login from your host machine to cluster webui with IP:8088 port
 
+# Run example
+
+# yarn jar $YARN_EXAMPLES/hadoop-mapreduce-examples-*.jar pi 16 100000
