@@ -7,13 +7,14 @@ config.vm.define :master do |master|
 	master.vm.provider "virtualbox" do |vb|
 		vb.customize ["modifyvm", :id, "--cpuexecutioncap", "80"]
 		vb.memory = 10000
-		vb.customize ["modifyvm", :id, "--cpus", "2"]   
 		vb.customize ["modifyvm", :id, "--ioapic", "on"]
 	end
-	#master.vm.provision :shell, path: "scripts/setup.sh"
-	master.vm.network "private_network" , ip: "10.0.2.16" ,
+	master.vm.provision :shell, path: "scripts/setup.sh"
+	master.vm.network "private_network" , ip: "192.168.13.13" ,
 	 	 virtualbox__intnet: "vagrantnat"
-	
+	# Forward various ports to view webpages
+	master.vm.network :forwarded_port, guest: 8088, host: 8088
+
 
 end
 
