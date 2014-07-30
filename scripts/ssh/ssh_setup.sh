@@ -1,3 +1,4 @@
+#!/bin/sh
 . /vagrant/scripts/common.sh
 . /vagrant/install_config.txt
 

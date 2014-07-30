@@ -23,6 +23,9 @@ cd ${MY_HOME}/${PROJECT}
 # Setup Hadoop
 /vagrant/scripts/hadoop/hadoop_setup.sh
 
+# Setup Hive
+/vagrant/scripts/hive/hive_setup.sh
+
 # Setup Zookeeper
 #/vagrant/scripts/zookeeper/zookeeper_setup.sh
 
@@ -41,6 +44,6 @@ cd ${MY_HOME}/${PROJECT}
 # Setup Hue
 #/vagrant/scripts/hue/hue_setup.sh
 
-echo "PATH=$PATH:${MY_HOME}/${PROJECT}/${SH_JAVA_VERSION}/bin:${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/bin:${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/sbin:${MY_HOME}/${PROJECT}/${SH_SCALA_VERSION}/bin:${MY_HOME}/${PROJECT}/${SH_SPARK_VERSION}/bin:${MY_HOME}/${PROJECT}/${SH_ZOOKEEPER_VERSION}/bin" >> ${MY_HOME}/.bashrc
+echo "PATH=$PATH:${MY_HOME}/${PROJECT}/${SH_JAVA_VERSION}/bin:${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/bin:${MY_HOME}/${PROJECT}/${SH_HADOOP_VERSION}/sbin:${MY_HOME}/${PROJECT}/${SH_SCALA_VERSION}/bin:${MY_HOME}/${PROJECT}/${SH_SPARK_VERSION}/bin:${MY_HOME}/${PROJECT}/${SH_ZOOKEEPER_VERSION}/bin:${MY_HOME}/${PROJECT}/${SH_HIVE_VERSION}/bin" >> ${MY_HOME}/.bashrc
 
 sudo chown -R vagrant:vagrant ${MY_HOME}/
