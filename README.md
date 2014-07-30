@@ -86,6 +86,11 @@ http://ip:8088
 Check that you are able to see Hadoop running
 
 
+Start Hive
+
+You can just type hive and start using it.
+
+
 Spark
 
 You can run sample Spark Jobs on Yarn
