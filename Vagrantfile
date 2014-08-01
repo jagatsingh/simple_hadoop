@@ -14,6 +14,10 @@ config.vm.define :master do |master|
 	 	 virtualbox__intnet: "vagrantnat"
 	# Forward various ports to view webpages
 	master.vm.network :forwarded_port, guest: 8088, host: 8088
+	master.vm.network :forwarded_port, guest: 8042, host: 8042
+	master.vm.network :forwarded_port, guest: 50070, host: 50070
+	master.vm.network :forwarded_port, guest: 50090, host: 50090
+	# master.vm.synced_folder "/Users/jaggija/dev_home/code", "/vagrant/dev_home"
 
 
 end
