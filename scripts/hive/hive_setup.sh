@@ -17,3 +17,4 @@ export_env_variable HIVE_HOME=${MY_HOME}/${PROJECT}/${SH_HIVE_VERSION}
 
 # Copy the configuration files
 cp -f /vagrant/conf/hive/conf/* ${MY_HOME}/${PROJECT}/${SH_HIVE_VERSION}/conf
+cp -f /vagrant/conf/hive/parquet*.jar ${MY_HOME}/${PROJECT}/${SH_HIVE_VERSION}/lib

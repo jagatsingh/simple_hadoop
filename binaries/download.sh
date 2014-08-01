@@ -15,6 +15,7 @@ wget -c -P java --no-check-certificate --no-cookies --header "Cookie: oraclelice
 
 # Download hive
 wget -c -P hive $APACHE_MIRROR/hive/stable/apache-$SH_HIVE_VERSION-bin.tar.gz
+wget -c -P hive http://central.maven.org/maven2/com/twitter/parquet-hive-bundle/1.5.0/parquet-hive-bundle-1.5.0.jar
 
 
 
